@@ -1,0 +1,487 @@
+
+*{
+  --secundario:rgb(217, 255, 0);
+  --oscuro: #353535;
+  --font2: 'Oswald', sans-serif;
+}
+  html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  
+  html{
+    box-sizing: border-box;
+    }
+  *,*::before,*::after{
+    box-sizing: inherit;
+  }
+  fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/***HEADER****/
+.redes-sociales{
+  text-align: center;
+}
+
+.redes-sociales a{
+  font-size: 1.75rem;
+  color: #fff;
+  margin-right: 25px;
+  transition: .3s ease-in-out;
+}
+
+.redes-sociales a:hover{
+  color: var(--secundario);
+}
+
+.redes-sociales a:last-of-type{
+  margin-right: 0;
+}
+
+  body{
+    background: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .contenedor{
+    margin: 0 auto;
+    width: 90%;
+  }
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  .seccion{
+    padding: 30px 0;
+  }
+  
+  
+  h3{
+    font-size: 2.4rem;
+  }
+  
+  .seccion p{
+    font-size: 1.4rem;
+  }
+  h3::after{
+    content: '';
+    margin: 1rem auto;
+    width: 100px;
+    height: 30px;
+    display: block;
+  
+  }
+  
+  .ta{
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .contenedor{
+      max-width: 1100px;
+    }
+  }
+  
+  div.banner{
+    background: url(puertoMadero.jpg)no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .contenido-header{
+    padding-top: 40px;
+  }
+  
+  @media (min-width: 768px) {
+    .contenido-header{
+      padding-top: 15px;
+    }
+  }
+  
+  /***FIN header****/
+
+  
+  
+  
+  .info-flex{
+    display: flex;
+    flex-direction: column;
+    margin: 4rem auto 0 auto;
+    max-width: 60%;
+    justify-content: space-between;
+    
+  }
+  
+  @media (min-width: 768px) {
+    .info-flex{
+      flex-direction: row ;
+    }
+  }
+  .info-flex p{
+    padding: 10px 5px;
+  }
+  
+  
+  h1.nombre-sitio{
+    font-size: 11.5vw;
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  h1.nombre-sitio span{
+    border-bottom: 2px solid var(--secundario);
+    text-transform: uppercase;
+  }
+  
+  @media (min-width: 480px) {
+    h1.nombre-sitio{
+      font-size: 10vw;
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+    h1.nombre-sitio span{
+    border-bottom: 4px solid var(--secundario);
+    }
+  }
+  p.slogan{
+    text-transform: none;
+    text-shadow: 2px 2px 5px black;
+    font-weight: 500;
+  }
+  
+  p.slogan span{
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    flex-wrap: wrap;
+  }
+  
+  @media (min-width: 768px) {
+    .navbar{
+      flex-wrap: nowrap;
+    }
+  }
+  
+  
+    .bloque{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .logo h2{
+      flex: 0 0 80%;
+    }
+  
+    .navegacion-principal{
+      flex: 0 0 100%;
+      text-align: center;
+      margin-top: 1rem;
+      display:block;
+    }
+  
+    .navegacion-principal a{
+      display: block;
+    }
+  
+  .barra{
+    background: var(--oscuro);
+    padding: .5rem;
+    
+  }
+  
+  .logo h2{
+    font-size: 2rem;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    line-height: 0.8;
+    padding-left: 0.75rem;
+    border-left: 15px solid var(--secundario);
+  }
+  
+  .logo h2 span{
+    border-bottom: 1px solid var(--secundario);
+  }
+  
+  @media (min-width: 950px) {
+    .logo h2{
+      flex: 0 0 calc(30%);
+    }
+    
+  }
+  
+  /*****************************NAV PRINCIPAL */
+  
+  .navegacion-principal{
+    display: none;
+  }
+  
+  
+  .navegacion-principal a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.9rem;
+    font-family: var(--font2);
+    padding: 15px 0;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .navegacion-principal a:hover{
+      color: var(--secundario);
+    }
+    
+  
+    .navegacion-principal a:last-of-type{
+      border: 1px solid var(--secundario);
+      margin: 10px 0;
+      padding: 5px 0.5rem;
+      transition: 0.2s ease-in-out;
+      border-radius: 0.3rem;
+    }
+  .reserv span{
+      padding-bottom: 0;
+      border-bottom: 0.5px solid var(--secundario);
+      transition: 0.2s ease-in-out;
+    }
+    
+    
+    a.reserv:hover{
+      background: var(--secundario);
+      color: #fff;
+      text-shadow: 0.5px 0.5px 2px black;
+      font-weight: 900;
+    }
+    .reserv:hover span{
+      border-bottom:0.5px solid var(--oscuro) ;
+    }
+  
+    
+  @media (min-width: 768px) {
+    .navegacion-principal{
+      display: flex;
+      justify-content: space-around;
+      flex: 0 0 calc(60% - 2rem);
+    }
+    
+    
+  }
+  
+  @media (min-width: 860px) {
+    .navegacion-principal a{
+      font-size: 1rem;
+    }
+  }
+   
+  .informacion-evento{
+    text-align: center;
+    color: #fff;
+  }
+  
+  .informacion-evento p{
+    display: inline;
+    font-size: 20px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .informacion-evento p i{
+    color: var(--secundario);
+    font-size: 2rem;
+    margin-right: 0.5rem;
+  }
+  /* PROGRAMA DEL EVENTO */
+  
+  .programa{
+    position: relative;
+   
+  }
+  
+  .contenido-programa{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+  }
+  
+  .programa-evento{
+    background-image: url(tallerBanner.jpg);
+    padding: 20px;
+    padding-bottom: 40px;
+    margin-top: 80px;
+    border-radius: 10px;
+  }
+  
+  
+  .menu-programa{
+    width: 100%;
+    font-family: var(--font2);
+    
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--secundario);
+  }
+  
+  @media (min-width: 768px) {
+    .menu-programa{
+      display: flex;
+    }
+  }
+
+  .menu-programa a:hover,
+  .menu-programa a i,
+  .detalle-evento i,
+  .detalle-evento h2{
+    color: var(--secundario);
+    text-shadow: .5px .5px 0px rgb(124, 124, 124);
+  }
+  
+  .menu-programa a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--oscuro);
+    padding-bottom: 5px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
+  }
+  @media (min-width: 768px) {
+    .menu-programa a{
+      flex: 0 0 33.3%;
+    }
+  }
+  
+  
+  
+  /* detalle evento */
+  
+  .detalle-evento{
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--secundario);
+  }
+  
+  div.detalle-evento:nth-child(2){
+    border-bottom: none;
+  }
+  
+  .detalle-evento p{
+    padding: 0 20px;
+  }
+  
+  .boton-flex{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  a.button{
+    border: 2px solid var(--secundario);
+    margin-top: 20px;
+    padding: 7px 1.5rem;
+    transition: 0.3s ease-in-out;
+    border-radius: 0.3rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--oscuro);
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  .button span{
+    border-bottom: 1px solid var(--secundario);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .button:hover{
+    text-shadow: .5px .5px 0px rgb(124, 124, 124);
+    background: var(--secundario);
+    color: #fff;
+  }
+  .button:hover span{
+    border-bottom: 1px solid var(--oscuro);
+  }
+  /***********************************SECCION INVITADOS */
+  
+  ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  
+  ul.lista-invitados li{
+    margin: 10px auto;
+  }
+  
+  @media (min-width: 700px) {
+    ul.lista-invitados li{
+      width: calc(50% - 1rem);
+      margin: 0.5rem;
+      float: left;
+    }
+  }
+  
+  @media (min-width: 950px) {
+    ul.lista-invitados li{
+      width: calc(33.3% - 2.4rem);
+      margin: 1rem;
+    }
+  }
+  
+  .invitado{
+    position: relative;
+    overflow: hidden;
+    font-family: var(--font2);
+  }
+  
+  .invitado img{
+    max-width: 100%;
+    width: 100%;
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    transition: 0.5s ease-in-out;
+  }
+  
+  .invitado:hover img{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    scale: 1.1;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  .invitado p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px 10px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.555);
+    color: var(--secundario);
+    text-shadow: 1px 0px 2px grey;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .invitado:hover p{
+    bottom:-80px;
+    opacity: 0;
+  }
+  
+  
